@@ -1,1 +1,4 @@
-{{yield}}
+{{#if showComponents.showQuestionTwo}}
+  <h4>Have you asked another pair for help?</h4>
+  <button class="btn" {{action "moveToQuestionThree"}}>Yes >></button>
+{{/if}}

@@ -1,1 +1,4 @@
-{{yield}}
+{{#if showComponents.showQuestionOne}}
+  <h4>Have you gone through all the steps on the Learn How to Program debugging lesson?</h4>
+  <button class="btn" {{action "moveToQuestionTwo"}}>Yes >></button>
+{{/if}}
