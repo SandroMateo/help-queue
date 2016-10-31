@@ -5,8 +5,6 @@ $white: #ffffff;
 $gray: #E6E6EA;
 
 body {
-  width: 100%;
-  text-align: center;
   background-color: $gray;
 }
 
@@ -21,3 +19,20 @@ button {
   color: $white;
   font-family: 'Nixie One', cursive;
 }
+
+// .banner {
+//   width: 100%;
+//   z-index: -2;
+// }
+//
+// #left {
+//   position: fixed;
+//   padding: 0;
+//   margin-left: -10%;
+//   position: absolute;
+//   width: 100%;
+// }
+//
+// #right {
+//   text-align: right;
+// }

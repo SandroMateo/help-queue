@@ -1,0 +1,12 @@
+{{#if showComponents.showTicketList}}
+  <div class="banner" {{action 'showTicketDetails' ticket}}>
+    <div class="row">
+      <div class="col-xs-4">
+        <h1>{{ticket.location}} {{moment-from-now ticket.timestamp interval=1000}}</h1>
+      </div>
+      <div class="col-xs-8">
+        <h1>{{ticket.name}}</h1>
+      </div>
+    </div>
+  </div>
+{{/if}}

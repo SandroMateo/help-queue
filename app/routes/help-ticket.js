@@ -8,6 +8,10 @@ export default Ember.Route.extend({
   actions: {
     destroyTicket(ticket) {
       ticket.destroyRecord();
+    },
+
+    back() {
+      this.transitionTo("teacher");
     }
   }
 });

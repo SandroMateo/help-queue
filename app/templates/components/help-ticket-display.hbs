@@ -1,1 +1,10 @@
-{{yield}}
+{{#if showComponents.showTicketDetails}}
+  <div class="banner">
+    <h3>{{selectedTicket.name}}</h3>
+    <h4>Location: {{selectedTicket.location}}</h4>
+    <div class="well">
+      <p>{{selectedTicket.question}}</p>
+    </div>
+  </div>
+  <button class="btn" {{action 'back'}}>back</button>
+{{/if}}

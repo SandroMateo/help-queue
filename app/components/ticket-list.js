@@ -1,12 +1,11 @@
 import Ember from 'ember';
+import moment from 'moment';
 
 export default Ember.Component.extend({
   showComponents: Ember.inject.service('show-hide'),
-
   actions: {
-    back() {
-      this.sendAction('back');
+    showTicketDetails(ticket) {
+      this.sendAction('showTicketDetails', ticket);
     }
   }
-
 });
