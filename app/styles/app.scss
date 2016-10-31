@@ -2,6 +2,18 @@
 
 $orange: #DC602E;
 $white: #ffffff;
+$gray: #E6E6EA;
+
+body {
+  width: 100%;
+  text-align: center;
+  background-color: $gray;
+}
+
+button {
+  background-color: $orange;
+  color: $white;
+}
 
 .navbar {
   text-align: center;

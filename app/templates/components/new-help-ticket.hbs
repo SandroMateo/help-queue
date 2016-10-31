@@ -12,7 +12,7 @@
 
     <div class="form-group">
       <label for="question"></label>
-      {{input value=question type="text" placeholder="Give a brief description of issue you are having." class="form-control"}}
+      {{textarea value=question type="text" placeholder="Give a brief description of issue you are having." class="form-control" rows="5"}}
     </div>
     <button class="btn" {{action 'saveTicket'}}>Help!</button>
   </form>
