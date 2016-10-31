@@ -1,5 +1,5 @@
 {{#if showComponents.showTicketConfirmation}}
-<h4>Thanks, {{model.name}}. Help is on the way.</h4>
-<p>Leave this page open while you continue working on the problem.</p>
-<button class="btn" {{action 'deleteTicket'}}>Nevermind, we got it!</button>
+  <h4>Thanks, {{ticket.name}}. Help is on the way.</h4>
+  <p>Leave this page open while you continue working on the problem.</p>
+  <button class="btn" {{action 'deleteTicket' ticket}}>Nevermind, we got it!</button>
 {{/if}}

@@ -7,7 +7,7 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.route('help-ticket');
+  this.route('help-ticket', {path: '/help-ticket/:helpTicket_id'});
 });
 
 export default Router;

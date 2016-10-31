@@ -5,7 +5,7 @@ export default Ember.Route.extend({
     saveTicket(params) {
       var newHelpTicket = this.store.createRecord('help-ticket', params);
       newHelpTicket.save();
-      this.transitionTo('index');
+      this.transitionTo('help-ticket', newHelpTicket);
     }
   }
 });

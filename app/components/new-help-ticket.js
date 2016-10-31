@@ -5,7 +5,6 @@ export default Ember.Component.extend({
   showComponents: Ember.inject.service('show-hide'),
   actions: {
     saveTicket() {
-      console.log(this.get('name'));
       if(this.get('name') === undefined || this.get('question') === undefined) {
         alert('Please enter your names and questions');
       } else {
