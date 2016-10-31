@@ -5,6 +5,8 @@ export default Ember.Service.extend({
   showQuestionTwo: false,
   showQuestionThree: false,
   showTicketForm: false,
+  showTicketConfirmation: false,
+  showCloseTicket: false,
 
   toggleQuestionOne() {
     if(this.get('showQuestionOne')) {
@@ -35,6 +37,22 @@ export default Ember.Service.extend({
       this.set('showTicketForm', false);
     } else {
       this.set('showTicketForm', true);
+    }
+  },
+
+  toggleTicketConfirmation() {
+    if(this.get('showTicketConfirmation')){
+      this.set('showTicketConfirmation', false);
+    } else {
+      this.set('showTicketConfirmation', true);
+    }
+  },
+
+  toggleCloseTicket() {
+    if(this.get('showCloseTicket')){
+      this.set('showCloseTicket', false);
+    } else {
+      this.set('showCloseTicket', true);
     }
   }
 });

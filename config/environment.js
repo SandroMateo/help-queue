@@ -21,7 +21,7 @@ module.exports = function(environment) {
       apiKey: "AIzaSyDAilV-4QKXAmDqps6qx38zQ3yoQxNLUgI",
       authDomain: "help-tickets-a4355.firebaseapp.com",
       databaseURL: "https://help-tickets-a4355.firebaseio.com",
-      storageBucket: ""
+      storageBucket: "help-tickets-a4355.appspot.com"
     },
 
     APP: {
